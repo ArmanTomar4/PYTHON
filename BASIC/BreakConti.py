@@ -1,15 +1,3 @@
-# lst = [10,20,30,40,50]
-
-# product = 1
-# index = 0
-# while index < len(lst):
-#     product*=lst[index]
-#     print(lst[index])
-#     index+=1
-# else:
-#     print ("no more no. on the list")
-# print ("product of all the digit in the list is {}".format(product))
-
 
 num = int (input("enter the no. : "))
 isDivisible=False
@@ -18,6 +6,7 @@ while i < num :
     if num % i == 0:
         isDivisible = True
         print ("{} is divisible with {}".format(num,i))
+        break
     i += 1
 if isDivisible:
     print ("{} is not prime no.".format(num))
